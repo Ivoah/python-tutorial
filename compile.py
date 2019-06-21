@@ -12,4 +12,5 @@ with open('all.md', 'w') as all:
         + ['\n']
     )
 
-    all.write('\n'.join(open(f).read() for _, f in files))
+    body = '\n'.join(open(f).read() for _, f in files)
+    all.write(re.sub(r'\(.*\.md(#.*)\)', r'(\1)', body))

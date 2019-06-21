@@ -8,3 +8,4 @@
 * [Functions](functions.md)
 * [Data structures](data_structures.md)
 * [Formatting](formatting.md)
+* [Comprehensions](comprehensions.md)

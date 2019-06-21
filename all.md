@@ -8,6 +8,7 @@
 * [Functions](#functions)
 * [Data structures](#data-structures)
 * [Formatting](#formatting)
+* [Comprehensions](#comprehensions)
 
 # Intro
 
@@ -86,7 +87,7 @@ patt = '\\d+(\\.\\d\\d)?'
 ```
 This obscures the original meaning of the string when being read.
 
-Python also supports a number of other prefixes, such as `f` for [formatting](formatting.md#f-strings).
+Python also supports a number of other prefixes, such as `f` for [formatting](#f-strings).
 
 ### Numbers
 
@@ -142,7 +143,7 @@ The `range` function returns an iterator that goes from `0` to `9` and the `for`
 
 `range` can accept a start, end, and step value. `range(5, 13, 2)` will loop over `[5, 7, 9, 11]`.
 
-A `for` loop can traverse any iterable, such as a [list](data_structures.md#lists) or generator.
+A `for` loop can traverse any iterable, such as a [list](#lists) or generator.
 
 ```python
 l = [8, 9, 2, 'hi']
@@ -232,7 +233,7 @@ def var(**kwargs):
     print(kwargs)
 ```
 
-Keyword arguments will be passed into the function as a [dictionary](data_structures.md#dictionarys).
+Keyword arguments will be passed into the function as a [dictionary](#dictionaries).
 
 ```python
 var(first='foo', second='bar') # prints "{'first': 'foo', 'second': 'bar'}"
@@ -412,3 +413,5 @@ print(f'{long_number:.3f}') # prints "42.584"
 ## Further reading
 
 Much more information about formatting can be found at https://pyformat.info/
+
+# Comprehensions

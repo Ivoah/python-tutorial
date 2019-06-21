@@ -52,7 +52,7 @@ def var(**kwargs):
     print(kwargs)
 ```
 
-Keyword arguments will be passed into the function as a [dictionary](data_structures.md#dictionarys).
+Keyword arguments will be passed into the function as a [dictionary](data_structures.md#dictionaries).
 
 ```python
 var(first='foo', second='bar') # prints "{'first': 'foo', 'second': 'bar'}"
