@@ -9,7 +9,8 @@ except:
     # Handle exception
 ```
 
-This code will catch any error that is thrown inside the `try` block. It is possible to narrow down the exceptions that the `except` block will catch.
+This code will catch any error that is thrown inside the `try` block.
+It is possible to narrow down the exceptions that the `except` block will catch.
 
 ```python
 try:
@@ -27,7 +28,9 @@ except IndexError as e:
     # Handle only an IndexError
 ```
 
-`Try`/`except` statements also support `else` and `finally` clauses. An `else` clause after `try`/`except` will execute only if the `except` clause does not run. A `finally` clause will always run, regardless if an exception is thrown or not.
+`Try`/`except` statements also support `else` and `finally` clauses.
+An `else` clause after `try`/`except` will execute only if the `except` clause does not run.
+A `finally` clause will always run, regardless if an exception is thrown or not.
 
 ```python
 try:

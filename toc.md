@@ -10,3 +10,4 @@
 * [Exceptions](exceptions.md)
 * [Formatting](formatting.md)
 * [Comprehensions](comprehensions.md)
+* [Type hinting](type_hinting.md)
