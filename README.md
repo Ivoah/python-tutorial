@@ -7,8 +7,12 @@
 * [Loops](#loops)
 * [Functions](#functions)
 * [Data structures](#data-structures)
+* [Classes](#classes)
 * [Exceptions](#exceptions)
 * [Formatting](#formatting)
+* [File I/O](#file-i/o)
+* [With statements](#with-statements)
+* [Command line arguments](#command-line-arguments)
 * [Comprehensions](#comprehensions)
 * [Type hinting](#type-hinting)
 * [C Interop](#c-interop)
@@ -295,7 +299,7 @@ reverse = original[::-1] # Creates a copy that is reversed
 It is even possible to change chunks of a list by assigning with slices
 
 ```python
-original[::2] = [7]*len(original) # replace every other value with 7
+original[::2] = [7]*int(len(original)/2) # replace every other value with 7
 ```
 
 ## Tuples
@@ -308,6 +312,16 @@ t = (3, 4)
 
 Like lists they can store any values and be heterogeneous.
 They also support all the same features as lists aside from changing elements.
+
+Tuples are typically used when returning multiple values from a function.
+
+```python
+def foo(a, b):
+    return a/b, a%b
+```
+
+The function `foo` in the block above returns a tuple with two values in it.
+Notice the parentheses are not necessary in this context.
 
 ## Dictionaries
 
@@ -355,6 +369,42 @@ d = {'f1': foo, 'f2': bar, 'number': 23}
 
 d['f1']() # calls the function "foo" defined above
 ```
+
+# Classes
+
+Python is an object oriented programming language.
+Accordingly, it is possible to create custom classes and define methods on them.
+New classes are defined using the `class` keyword.
+
+```python
+class Adder:
+    def __init__(self, initial_total):
+        self.total = initial_total
+    
+    def add(self, n):
+        self.total += n
+
+foo = Adder(5)
+print(foo.total) # prints "5"
+foo.add(10)
+print(foo.total) # prints "15"
+```
+
+This code creates a simple class with two methods defined.
+`__init__` is a special ["dunder" method](#dunder-methods) which acts as the class's initializer.
+This initializer takes two arguments: `self`, which is a reference to the new instance of the class, and `initial_total`, used to initialize `self.total`.
+All methods must have at least one parameter, conventionally called `self`, so they can reference the class they are part of.
+
+Python has no concept of public vs. private members of a class.
+Conventionally "private" members of a class are prefixed with an underscore, but this is purely convention and they are still accessible from outside the class.
+
+## Dunder methods
+
+Python doesn't support overloading operators to provide advanced functionality to classes, but instead uses special double underscore, or dunder, methods.
+
+Some of the most common are `__init__`, `__str__`, `__lt__`, `__gt__`, and `__getitem__`.
+
+A full list of dunder methods and their usage can be found in the [official documentation](https://docs.python.org/3/reference/datamodel.html#special-method-names)
 
 # Exceptions
 
@@ -464,6 +514,12 @@ print(f'{long_number:.3f}') # prints "42.584"
 
 Much more information about formatting can be found at https://pyformat.info/
 
+# File I/O
+
+# With statements
+
+# Command line arguments
+
 # Comprehensions
 
 Some of Python's coolest features are list, dictionary, and generator comprehensions.
@@ -522,7 +578,7 @@ print('\n'.join(str(i*2) for i in range(10)))
 # Type hinting
 
 While Python is a dynamically typed language and doesn't have explicit types, it does have type hinting.
-When used with tools such as [mypy][mypy] it is possible to combine the flexibility of dynamic typing with the safety of static typing.
+When used with tools such as [mypy] it is possible to combine the flexibility of dynamic typing with the safety of static typing.
 
 ```python
 def foo(bar: str) -> int:
@@ -535,7 +591,7 @@ Type hints for function return values are placed after an arrow after the parame
 
 Python itself does nothing with the type hints.
 It would be perfectly valid to pass a list to the `foo` function defined above.
-Type hints are purely decorative unless used with an external tools such as [mypy][mypy].
+Type hints are purely decorative unless used with an external tools such as [mypy].
 
 It is also possible to access the type hints from within Python code.
 The `__annotations__` attribute of the function contains all the type hinting information.

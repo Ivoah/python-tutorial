@@ -51,7 +51,7 @@ reverse = original[::-1] # Creates a copy that is reversed
 It is even possible to change chunks of a list by assigning with slices
 
 ```python
-original[::2] = [7]*len(original) # replace every other value with 7
+original[::2] = [7]*int(len(original)/2) # replace every other value with 7
 ```
 
 ## Tuples
@@ -64,6 +64,16 @@ t = (3, 4)
 
 Like lists they can store any values and be heterogeneous.
 They also support all the same features as lists aside from changing elements.
+
+Tuples are typically used when returning multiple values from a function.
+
+```python
+def foo(a, b):
+    return a/b, a%b
+```
+
+The function `foo` in the block above returns a tuple with two values in it.
+Notice the parentheses are not necessary in this context.
 
 ## Dictionaries
 

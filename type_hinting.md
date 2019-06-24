@@ -1,7 +1,7 @@
 # Type hinting
 
 While Python is a dynamically typed language and doesn't have explicit types, it does have type hinting.
-When used with tools such as [mypy][mypy] it is possible to combine the flexibility of dynamic typing with the safety of static typing.
+When used with tools such as [mypy] it is possible to combine the flexibility of dynamic typing with the safety of static typing.
 
 ```python
 def foo(bar: str) -> int:
@@ -14,7 +14,7 @@ Type hints for function return values are placed after an arrow after the parame
 
 Python itself does nothing with the type hints.
 It would be perfectly valid to pass a list to the `foo` function defined above.
-Type hints are purely decorative unless used with an external tools such as [mypy][mypy].
+Type hints are purely decorative unless used with an external tools such as [mypy].
 
 It is also possible to access the type hints from within Python code.
 The `__annotations__` attribute of the function contains all the type hinting information.
