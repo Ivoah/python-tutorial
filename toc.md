@@ -7,5 +7,7 @@
 * [Loops](loops.md)
 * [Functions](functions.md)
 * [Data structures](data_structures.md)
+* [Exceptions](exceptions.md)
 * [Formatting](formatting.md)
 * [Comprehensions](comprehensions.md)
+* [Functional Programming](functional_programming.md)
