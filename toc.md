@@ -11,3 +11,4 @@
 * [Formatting](formatting.md)
 * [Comprehensions](comprehensions.md)
 * [Type hinting](type_hinting.md)
+* [C Interop](c_interop.md)
