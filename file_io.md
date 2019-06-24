@@ -11,11 +11,13 @@ f = open('file.txt')
 content = f.read()
 f.close()
 ```
+
 ```python
 f = open('file.txt')
 lines = f.readlines()
 f.close()
 ```
+
 ```python
 f = open('file.txt')
 for line in f:
