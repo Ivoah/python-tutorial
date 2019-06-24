@@ -10,4 +10,3 @@
 * [Exceptions](exceptions.md)
 * [Formatting](formatting.md)
 * [Comprehensions](comprehensions.md)
-* [Functional Programming](functional_programming.md)
