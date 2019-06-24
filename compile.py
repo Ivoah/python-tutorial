@@ -2,7 +2,7 @@ import re
 
 chapter_re = re.compile(r'\[(.*)\]\((.*)\)')
 
-with open('all.md', 'w') as all:
+with open('README.md', 'w') as all:
     with open('toc.md') as toc:
         files = chapter_re.findall(toc.read())
     
