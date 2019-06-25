@@ -30,7 +30,7 @@ except IndexError as e:
 
 `Try`/`except` statements also support `else` and `finally` clauses.
 An `else` clause after `try`/`except` will execute only if the `except` clause does not run.
-A `finally` clause will always run, regardless if an exception is thrown or not.
+A `finally` clause will always run, regardless of whether an exception is thrown or not.
 
 ```python
 try:
