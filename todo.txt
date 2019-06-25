@@ -1,5 +1,0 @@
-File I/O
-With statements
-Returning multiple values from a function
-Command line arguments
-Dunders
