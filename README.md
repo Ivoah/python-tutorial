@@ -9,7 +9,7 @@
 * [Data structures](#data-structures)
 * [Classes](#classes)
 * [Exceptions](#exceptions)
-* [Formatting](#formatting)
+* [String formatting](#string-formatting)
 * [File I/O](#file-io)
 * [With statements](#with-statements)
 * [Command line arguments](#command-line-arguments)
