@@ -9,7 +9,7 @@
 * [Data structures](data_structures.md)
 * [Classes](classes.md)
 * [Exceptions](exceptions.md)
-* [Formatting](formatting.md)
+* [String formatting](string_formatting.md)
 * [File I/O](file_io.md)
 * [With statements](with_statements.md)
 * [Command line arguments](command_line.md)
