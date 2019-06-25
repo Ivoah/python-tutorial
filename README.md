@@ -10,7 +10,7 @@
 * [Classes](#classes)
 * [Exceptions](#exceptions)
 * [Formatting](#formatting)
-* [File I/O](#file-i/o)
+* [File I/O](#file-io)
 * [With statements](#with-statements)
 * [Command line arguments](#command-line-arguments)
 * [Comprehensions](#comprehensions)

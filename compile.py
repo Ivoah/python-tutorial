@@ -8,7 +8,7 @@ with open('README.md', 'w') as all:
     
     all.writelines(
         ['# Table of Contents\n', '\n']
-        + [f'* [{t}](#{"-".join(t.lower().split())})\n' for t, f in files]
+        + [f'* [{t}](#{"-".join(t.lower().replace("/", "").split())})\n' for t, f in files]
         + ['\n']
     )
 
