@@ -42,7 +42,7 @@ Python also supports a number of other prefixes, such as `f` for [formatting](fo
 
 ### Numbers
 
-Python supports most common formats for expressing numeric literals. `Ob`, `O0`, and `Ox` prefixes will create binary, octal, and hex literals respectively.
+Python supports most common formats for expressing numeric literals. `0b`, `0o`, and `0x` prefixes will create binary, octal, and hex literals respectively.
 Float literals can be written in scientific notation using either `E` or `e`.
 Any number literal can be written with underscores between digits that do not affect the value at all.
 Underscores are used solely to make reading the number easier.
@@ -50,7 +50,8 @@ Underscores are used solely to make reading the number easier.
 All of these variables are equal to each other:
 ```python
 a = 0x2A
-b = 0b10_1010
-c = 4.2e1
-d = 4_2
+b = 0o52
+c = 0b10_1010
+d = 4.2e1
+e = 4_2
 ```
