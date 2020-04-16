@@ -3,7 +3,7 @@
 Python syntax shares many similarities with languages such as C and Java.
 
 ## Indentation
-The most confusing difference for newcomers to the languae is significant whitespace.
+The most confusing difference for newcomers to the language is significant whitespace.
 Unlike most languages, Python uses indentation to separate blocks instead of curly braces or other identifiers.
 
 ```python
